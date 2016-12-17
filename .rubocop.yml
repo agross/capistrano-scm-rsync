@@ -1,0 +1,10 @@
+AllCops:
+  DisplayCopNames: true
+
+require: rubocop-rspec
+
+Style/Documentation:
+  Enabled: false
+
+Metrics/LineLength:
+  Max: 120

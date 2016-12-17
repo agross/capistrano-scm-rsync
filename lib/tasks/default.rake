@@ -1,0 +1,1 @@
+task default: [:lint, :spec]
