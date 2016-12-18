@@ -11,6 +11,7 @@ Gem::Specification.new do |spec|
   spec.summary       = 'capistrano deployments using rsync as the SCM'
   spec.description   = 'Uses rsync to copy a local directory to your deployment servers'
   spec.homepage      = 'https://github.com/agross/capistrano-scm-rsync'
+  spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
     f.match(%r{^(test|spec|features)/})
