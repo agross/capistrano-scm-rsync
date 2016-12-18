@@ -1,4 +1,5 @@
 build/
 coverage/
+pkg/
 
 Gemfile.lock
