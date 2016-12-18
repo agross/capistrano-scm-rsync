@@ -10,4 +10,8 @@ group :development do
 
   gem 'rubocop', '~> 0.46'
   gem 'rubocop-rspec'
+
+  gem 'codeclimate-test-reporter'
+  gem 'coveralls'
+  gem 'simplecov'
 end

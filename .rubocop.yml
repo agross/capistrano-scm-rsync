@@ -8,3 +8,12 @@ Style/Documentation:
 
 Metrics/LineLength:
   Max: 120
+
+RSpec/NamedSubject:
+  Enabled: false
+
+RSpec/ExampleLength:
+  Max: 10
+
+RSpec/NestedGroups:
+  MaxNesting: 4

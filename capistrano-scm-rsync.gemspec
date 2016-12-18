@@ -1,11 +1,10 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'capistrano/scm/rsync/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'capistrano-scm-rsync'
-  spec.version       = Capistrano::SCM::Rsync::VERSION
+  spec.version       = '0.1.0'
   spec.authors       = ['Alexander Groß']
   spec.email         = %w(agross@therightstuff.de)
 
@@ -19,4 +18,6 @@ Gem::Specification.new do |spec|
   spec.bindir        = 'exe'
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = %w(lib)
+
+  spec.add_dependency 'capistrano', '~> 3.7'
 end
