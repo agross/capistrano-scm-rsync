@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = 'capistrano-scm-rsync'
-  spec.version       = '0.1.1'
+  spec.version       = '0.1.2'
   spec.authors       = ['Alexander Groß']
   spec.email         = %w(agross@therightstuff.de)
 
@@ -13,14 +13,14 @@ Gem::Specification.new do |spec|
   spec.homepage      = 'https://github.com/agross/capistrano-scm-rsync'
   spec.license       = 'MIT'
 
-  spec.required_ruby_version = '>= 2.0'
-
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
     f.match(%r{^(test|spec|features)/})
   end
   spec.bindir        = 'exe'
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = %w(lib)
+
+  spec.required_ruby_version = '>= 2.0'
 
   spec.add_dependency 'capistrano', '~> 3.7'
 end
