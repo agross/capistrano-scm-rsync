@@ -1,4 +1,4 @@
-# Capistrano::Scm::Rsync
+# Capistrano::SCM::Rsync
 
 [![Gem Version](https://badge.fury.io/rb/capistrano-scm-rsync.svg)](http://badge.fury.io/rb/capistrano-scm-rsync)
 [![Build Status](https://travis-ci.org/agross/capistrano-scm-rsync.png?branch=master)](https://travis-ci.org/agross/capistrano-scm-rsync)
