@@ -1,1 +1,1 @@
-task default: [:lint, :spec]
+task default: %i(lint spec)

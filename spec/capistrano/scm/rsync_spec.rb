@@ -92,9 +92,10 @@ describe Capistrano::SCM::Rsync do
     # Stub the SSHKit backend so we can set up expectations without the plugin
     # actually executing any commands.
     let(:backend) { spy }
-    before { allow(SSHKit::Backend).to receive(:current).and_return(backend) }
 
     before do
+      allow(SSHKit::Backend).to receive(:current).and_return(backend)
+
       subject.create_release
     end
 

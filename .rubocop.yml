@@ -3,8 +3,27 @@ AllCops:
 
 require: rubocop-rspec
 
+Metrics/BlockLength:
+  Exclude:
+    - spec/**/*_spec.rb
+
 Style/Documentation:
   Enabled: false
+
+Style/EndOfLine:
+  Enabled: false
+
+Style/PercentLiteralDelimiters:
+  # Specify the default preferred delimiter for all types with the 'default' key
+  # Override individual delimiters (even with default specified) by specifying
+  # an individual key
+  PreferredDelimiters:
+    default: ()
+    '%i': ()
+    '%I': ()
+    '%r': '{}'
+    '%w': ()
+    '%W': ()
 
 Metrics/LineLength:
   Max: 120
@@ -16,4 +35,4 @@ RSpec/ExampleLength:
   Max: 10
 
 RSpec/NestedGroups:
-  MaxNesting: 4
+  Max: 4
